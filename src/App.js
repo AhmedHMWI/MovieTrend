@@ -11,6 +11,7 @@ import MovieDetails from './Components/MovieDetails/MovieDetails';
 const router = createBrowserRouter ([
   {path: '' , element: <Main/>, children:[
     {path:'', element: <Home/> },
+    {path:'MovieTrend', element: <Home/>},
     {path:'home', element: <Home/> },
     {path:'movies', element: <Movies /> },
     {path:'tv', element: <Tv /> },
@@ -19,7 +20,6 @@ const router = createBrowserRouter ([
         {path: ':id'}
       ]}
     ] },
-    {path:'MovieTrend/', element: <Home/>}
     {path:'*', element: <Notfound/> },
   ] }
 ])

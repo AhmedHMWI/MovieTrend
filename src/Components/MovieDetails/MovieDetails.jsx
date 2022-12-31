@@ -28,9 +28,9 @@ const MovieDetails = () => {
                         <p className='pb-5  text-primary fs-3'>Overview: <span className='text-light fs-4'>{objDetails.overview}</span> </p>
                         <h6 className='pb-5 fs-4  text-primary'>Vote: <span className='fs-3 text-light'>{objDetails.vote_average}</span> </h6>
                         {objDetails.genres?.map((elem, idx) =>
-                            <span key={idx} className='bg-primary m-3 p-3 rounded '>
-                                {elem.name}
-                            </span>
+                            <div key={idx} className='w-25 d-inline bg-primary rounded m-3 p-2'>
+                                 {elem.name}
+                            </div>
                         )}
                     </div>
                 </div>
